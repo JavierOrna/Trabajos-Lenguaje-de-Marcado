@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+https://github.com/JavierOrna/Trabajos-Lenguaje-de-Marcado/blob/master/LM_MANUAL%201%C2%AA%20ev.HTML <br>
+
+https://github.com/JavierOrna/Trabajos-Lenguaje-de-Marcado/blob/master/Trabajo%20LM%20Geometr%C3%ADa.gif <br>
+
+https://github.com/JavierOrna/Trabajos-Lenguaje-de-Marcado/blob/master/Trabajo%20LM%20LibroAbierto.jpg <br>
+
+https://github.com/JavierOrna/Trabajos-Lenguaje-de-Marcado/blob/master/Trabajo%20LM%20homer.gif <br>
+
+<!-- 
+
+ Hablo de los elementos metadatos en la sección de metadatos.
+
+-->
+
+<head>
+	<meta charset="utf-8">
+	<title> 	MANUAL HTML </title> 
+	<meta name="author" content="Javier Orna">
+	<link TYPE="text/css" rel="stylesheet" href="STYLE.css">
+</head>
+
+<body>
+<article>
+
+   <p>                                                                                             
+   A esta parte del documento se llega con el link "Volver arriba con TOP" que está en la sección de LINKS. 
+   </p>
+   
+  <h1>MANUAL DE LENGUAJE DE MARCADO HTML</h1>
+                                         
+	<main>
+		<h4>	Este documento es un manual para aprender lo más básico de html, que significa Lenguaje de Marcas de HiperTexto.</h4>
+	</main>
+
+<section>
+ 
+	<p> Un lenguaje de marcado es una forma de codificar un documento que, junto con el texto, incorpora etiquetas o marcas que contienen información adicional acerca de la estructura del texto o su presentación.
+                         
+    Las etiquetas son lo que iría dentro del marbete. Pero Nosotros les llamamos directamente etiquetas.
+  </p>   
+  <p> <b> Podemos subdividir las marcas según su función:</b> </p> 
+   
+  <p> <u> Marcado de presentación:</u> </p> 
+  Indica el formato del texto, es decir cómo  ha de presentarse el documento. 
+  Da la estructua del texto. Añade códigos para que sepamos lo que son las cosas. Con una compración podemos decir que sería como decir el título, autor, editorial.
+  Estas etiquetas suelen estar ocultas al usuario.<br>
+
+ <p> <u> Marcado de pocedimiento:</u> </p>
+ También está enfocado hacia la presentación del texto, sin embargo, las marcas que formatean el texto son visibles para el usuario y permiten procesamiento (le indican al ordenador cómo hacer las cosas con un conjunto de acciones) según el tipo de etiqueta.
+
+  <p> <u> Marcado semántico: </u> 
+  Utiliza las marcas o etiquetas para describir los fragmentos de texto.
+  </p>
+  
+  <p>
+  Cuando nació este lenguaje sólo tenía 28 marcas. Pero tuvo mucho éxito desde el inicio.
+  Luego evolucionó metiendo muchas más etiquetas. 
+  </p>
+  <p> Todas las etiquetas  que tienen contenido se abren y se cierran. Por ejemplo: 
+  &lt;p&gt;Toda etiqueta que tiene contenido lleva otra de cierre la cual lleva el slash después del signo menor que&lt;/p&gt;
+   </p>
+   <p>Las etiquetas llamadas vacías las cuales no encierran ningún texto, no llevan etiqueta de cierre.
+  Por ejemplo: &lt;img&gt;, &lt;br&gt;, &lt;hr&gt;...
+  </p>
+  
+  <p> Al inicio del documento, dentro del elemento "head" se declara el documento así: &lt;!DOCTYPEhtml&gt; <br>
+	Se declara el idioma predeterminado del texto de la página web con el atributo de idioma de este modo: &lt;html lang="es"&gt;. Para declarar la lengua polaca escribimos "pl", la francesa "fr", la inglesa "en".
+	</p>
+  
+</section>
+
+<section>
+	<b> <h3> POSIBLE ESTRUCTURA GENERAL<h3> </b> <br>
+	 	<pre>
+   	Su estructura puede ser la siguiente, aunque no hay una fija.<br>	
+		Tenemos un sólo head y un sólo body.
+		Comienza por el encabezado &lt;head&gt; que contiene el título y los metadatos. Éstos últimos son datos sobre los datos. De ahí su nombre. <br>
+		&lt;!doctype html&gt; Es la raíz de un documento de este tipo. Todos los demás elementos son descendientes de este elemento.
+		&lt;html lang="es"&gt; Especifica el idioma de escritura del documento html.
+						  
+		Si en alguna parte del body tenemos un texto en otro idioma, y un invidente está utilizando este documento, se necesita el elemento &lt;span&lgt; 
+		para que sepa que cambia de idioma.
+		Si éste está escrito en francés escribiremos &lt;span lang="fr"&gt;. El elemento &lt;span&gt; representa un texto sin un significado específico. 
+		Es utilizado cuando ningún otro elemento semántico le confiere un significado adecuado, en cuyo caso, provendrá de atributos globales como class, lang, o dir. 
+ 
+			&lt;head&gt;
+			&lt;head&gt;
+		  
+			&lt;body&gt;
+			&lt;body&gt;
+                                  
+	Dentro del body se abre un artículo &lt;article&gt; en el cual se abren varias secciones &lt;section&gt;
+	Cada artículo y cada sección puede llevar un encabezado o titular.
+	Y dentro se escriben los párrafos &lt;p&gt;.
+   </pre> 
+
+</section>
+
+  <P> <h3>ENCABEZADO</h3></P>
+	
+	<h2>TITULAR</h2>
+ 
+	<p>Párrafo introducción</p>
+ 	
+	<h2>ENCABEZADO de una segunda sección</h2>
+ 
+	<p>Párrafo de contenido...</p>
+ 
+	<h2>Otra sección</h2>
+ 
+	<p>Otros párrafos de contenido</p>
+
+	<hr>
+
+<section>
+                                                     
+  <em>&lt;em&gt; Lo que viene a continuación entre &lt;strong&gt;  &lt;/strong&gt; tiene más importancia. Aunque lo que se ve entre &lt;em&gt; y &lt;/em&gt; también significa que es de importancia pero menor.&lt;/em&gt; </em>
+  <p> 
+  &lt;strong&gt; 
+ <strong> 
+		La estrucrtura que subyace en un documento html ha de ser anidada. Un cuadro dentro de otro cuadro.
+ 	</strong>
+  &lt;/strong&gt;
+  </p>
+ 
+  <p>	
+	Una hipótesis de trabajo:
+
+	Dentro del head tenemos metadatos y enlaces.
+	Y el body contiene un artículo, y dentro de él distintas secciones, y en ellas varios párrafos,listas,navs
+  </p> 
+</section>
+
+  <hr>
+
+ <section>
+	<p> 
+		<b>&lt;header&gt;</b> Es la cabecera de una página o sección. Puede contener un logotipo, el título del sitio Web, un menú horizontal de contenidos....Si el header está en una sección, también puede tener el nombre del autor y otra información parecida. la fecha de publicación, la licencia de información y otros. Article, section, aside y nav pueden tener también su propio header.
+		<b>ELEMENTOS</b>
+	</p> 
+
+	<p>
+		<b>&lt;footer&gt;</b> Define el pie de una página o sección. Contiene normalmente el copyright y avisos legales y algunos 
+     para dar información de retroalimentación.
+
+		Tanto si el heador como el footer están en una sección, también pueden tener el nombre del autor y otra información parecida.
+		Article, section, aside y nav pueden tener también su propio footer y su propio header.
+	</p>
+
+	<p>
+		<b>&lt;address&gt;</b> Da información del autor del documento. 
+	</p> 
+
+	<p> 
+		<b>&lt;aside&gt;</b> Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido. Puede estar entre el header y el footer 
+	</p> 
+
+	<p>
+		<b>&lt;nav&gt;</b> Estas etiquetas dan a los navegadores más información ayudando a identificar las partes más relevantes del documento.
+	</p> 
+
+	<p>
+		La etiqueta &lt;nav&gt; agrupa elementos de navegación
+	</p>
+	
+    <pre>
+
+		Veámoslo con un simple ejemplo:<br>
+		  &lt;body&gt;
+          &lt;header&gt;
+    			   &lt;h1&gt;Tutoriales&lt;h1&gt;
+           &lt;/header&gt;
+     			  &lt;nav&gt;
+          			&lt;a href="http://www3.gobiernodecanarias.org/medusa/ecoblog/rtexsaa/tutoriales/">Tutorial Ciencias Sociales&lt;/a&gt;
+          			&lt;a href="http://maxfactor.es/make-up-tutorials-and-coaching/maquillaje-antiedad">Tutorial Maquillaje&lt;/a&gt;
+          			&lt;a href="http://foro.elhacker.net/java/manual_de_java_para_tontos_como_yo-t137487.0.html">Tutorial Java para tontos&lt;/a&gt;
+			   &lt;/nav&gt;
+      &lt;/body&gt;    
+      
+     </pre>
+      
+		<p>
+		 El elemento &lt;nav&gt; se encuentra dentro de las etiquetas &lt;body&gt;, pero después de las etiquetas de cierre de header y no dentro de éstas. Esto es porque el &lt;nav&gt; no forma parte del header, si no que es una nueva sección. 
+		</p> 
+	</section>
+
+    <p> A ésta línea se llega con el link: "Ir a la mitad del documento" que está dentro de la explicación de LINKS.
+    <br> 
+    <a id="mitad del doc">Estás en la mitad del documento<a>
+     </p>
+    <p> 
+	&lt;main&gt; Define el contenido principal o importante en el documento. <u> Solamente existe un elemento main en el documento. </u>
+	</p>
+
+<section>	
+		<p>
+		Elementos sencillos para la edición del texto son:
+
+		Tipos de letra:
+		<ul>
+			&lt;i&gt; <i> itálica </i> &lt;/i&gt; <br>
+			&lt;b&gt; <b> negrita </b> &lt;/b&gt; <br>
+			&lt;s&gt; <s> tachado </s> &lt;/s&gt; <br>
+			&lt;u&gt; <u> subrayado </u> &lt;/u&gt; <br>
+		</ul>
+		</p>
+</section>
+
+<section>                         
+	<h3>ENCABEZADOS</h3>
+		
+		<p>
+			Para crear encabezados tanto en la página web como en un artículo o en capítulos o secciones de libros usamos el elemento "hn", 
+			indicando "n" el rango de 1 a 6 siendo 1 el tamaño mayor y 6 el menor.   
+        </p>
+		<p>	En la siguiente línea no aparece el tamaño real que da h1 ya que ha sido utilizado mas arriba en el documento, y sólo da su auténtico formato la primera vez. Y toma el tamaño de h2.</p>
+			<h1>(Visualización con h1)</h1> 
+			<h2>(Visualización con h2)</h2>
+			<h3>(Visualización con h3)</h3>
+			<h4>(Visualización con h4)</h4>
+			<h5>(Visualización con h5)</h5>
+			<h6>(Visualización con h6)</h6>
+		
+
+		<p> 
+			Siguiendo la estructura corporal humana, después del elmento &lt;head&gt; viene el elmento &lt;body&gt;.
+			Este elemento &lt;body&gt; contiene todo el contenido visible de un documento HTML, como texto, hipervínculos, imágenes, tablas, listas, etc. 
+		</p>
+
+
+	<h3>PÁRRAFOS</h3>
+		<p>
+			Los párrafos se definen con el elemento &lt;p&gt;.
+		</p>
+		<p> Esta linea es un ejemplo de lo que puede ser un párrafo 
+		</p>
+
+	<h3>PREFORMATO</h3>
+		<p>
+			El preformato se define con el elemeto "PRE".
+			Así podemos dar el formato que queremos nosotros. 
+      Es un texto que añadimos que funciona independiente. Por ejemplo, una explicación o ejemplo de los que es una línea de ejecución.
+		</p>
+
+	<h3>LISTADOS</h3>
+		<p>
+			Con el elemento &lt;ol&gt; sacamos un listado ordenado, pero con elemento &lt;ul&gt; el listado no será ordenado numéricamete. 
+			obtenemos una lista ordenada numéricamente. Al inicio de cada elemento a listar pondremos el elemento &ltli&gt y al final lo cerramos &lt/li&gt. 
+		</p>
+			Este es un ejemplo: <br>
+				<ol>
+					<li>Animal</li>
+					<li>Burro </li>
+					<li>Caballo </li>
+					<li>Dromedario </li>
+					<li>Erizo </li>
+					<li>Foca </li>
+					<li>Jirafa </li>
+				</ol>
+
+		<p>
+			Con el elemento "ul" obtenemos una lista desordenada no ordenada numéricamente.<br>
+      Se utiliza igualmente el elmento &lt;li&gt; cerrandolo al final del elemento con &lt;/li&gt;.<br> 
+	
+      Veámoslo más claro con un ejemplo:
+		</p>
+		<ul>
+					<li>Animal</li>
+					<li>Burro </li> 
+					<li>Caballo </li>
+					<li>Dromedario </li>
+					<li>Erizo </li>
+					<li>Foca </li>
+					<li>Jirafa </li>
+				</ul>
+				</p>
+</section>
+
+<section>
+		<pre>
+ listas de definición: &lt;dl&gt;  En el siguiente ejemplo la lista definida &lt;dl&gt; es ORGANIZACIONES
+	-> Definición del término: &lt;dt&gt;  En el siguiente ejemplo el término definido &lt;dt&gt; es ONU
+	-> Definición de los datos: &lt;dd&gt; En el siguiente ejemplo el dato definido &lt;dd&gt; es Organización de las Naciones Unidas
+		</pre>
+
+			Caso práctico:
+			<dl> ORGANIZACIONES
+				  <dt>ONU</dt>
+					<dd> Organización de las Naciones Unidas </dd>
+				  <dt>UE</dt>
+					  <dd> Unión Europea </dd>
+			 </dl>   
+</section>
+
+<section>
+		<h3>METADATOS</h3>
+
+		<p>
+      Es información que envía el servidort al cliente.
+			Define una propiedad en un elemento y le da valor a esa propiedad.<br>
+
+		  Su estructura es la siguiente: &lt;elemento atributo="valor"&gt;<br>
+
+		El metadato&lt;lang&gt; especifica el idioma base de los valores de los atributos y del texto contenido en un elemento. Su sintaxis es la siguiente: lang="Valor que especifica el idioma". 
+
+		<ul>
+			El atributo lang es útil para:
+			<li> Ayudar a los motores de búsqueda. </li> 
+			<li> Ayudar a los sintetizadores de voz. </li> 
+			<li> Ayudar al agente de usuario a hacer decisiones sobre separación de palabras, ligaduras, y espaciado. </li> 
+			<li> Ayudar a los verificadores de ortografía y gramática. </li>  
+		</ul>
+
+		Para declarar un idioma concreto ponemos el valor que html asigna a cada idioma. Para el español "es", el Polaco "pl", el francés "fr", el inglés "en" y así con todos los idiomas. <br> 
+		<b>.- El metadato &lt;charset&gt; </b> establece el tipo de carácter de este modo:charset=""utf-8". </b>
+			"utf-8" significa el uso de los caracteres de lengua española en la página web.<br> 
+
+		<b>.-  Un atributo de la etiqueta meta es content </b>, el cual es utilizado para dar valores a los metadatos de la página.<br>
+			Establece el tipo de carácter así &lt;name="Autor" content="Ignacio"&gt;.</b>
+
+		</p>
+</section>
+
+<section>
+	<h3> LINKS </h3>
+		<p>
+			Se puede crear un enlace a otra página: <br> 
+
+			Para hacer un link a alguna página de internet se utiliza el elemento <b>&lt;href&gt;</b>. 
+
+					<br>He aquí un ejemplo de enlace a la página de google. <br>
+          Su estructura es:
+					&lt;a href="http://www.google.com"&gt;Ir a la página de google.&lt;a&gt; 
+          Para abrir la página web en otra pestaña hay que escribir target="_blank"
+          <br>
+          Par ir a una página web: <a href="http://www.google.com" target="_blank">Ir a la página de google.</a><br>
+			                                         
+          Para ir al inicio del documento: <a href="#top">Volver arriba con TOP</a>  <br>
+				  Para ir al final del documento: <a href="#end_doc">Ir al final del documento</a> <br>
+          Para ir a una parte concreta del documento: <a href="#mitad del doc">Ir a la mitad del documento</a> <br>		
+    </p>
+</section>
+
+ <section>
+	<h3> IMÁGENES </h3>
+		<p> 
+			Para incluir una imagen se utiliza el elemento <b>&lt;img&gt;</b>. <br>
+       Con un ejemplo se ve mucho más claro.<br>
+			<img src="Trabajo LM LibroAbierto.jpg" width=500px hight=600px>
+      
+      Su estructura es &lt;img src="nombre de la foto.jpg"&gt;  la anchura y altura van definidas antes del&gt; de este modo Width=Número de píxeles(px) hight=Número de píxeles(px) . Pero no esobligatorio especificarlas por que da el tamaño por defecto.<br>		
+			<b>&lt;src&gt;</b> especifica el nombre de la imagen o la URL donde ésta se encuentra en la web.
+  	</p> 
+        
+		<p>
+		            
+			El uso de texto para comentar las imágenes es una regla fundamental que debemos observar en la creación de sitios web por varias razones:<br>
+
+			Los invidentes no pueden interpretar una imagen sin su respectivo comentario a ésta. Para ésto existen navegadores textuales para invidentes.<br>
+
+			El uso de comentarios resuelve el problema y permite optimizar la página web. La sintaxis correcta de los comentarios es:  <br>
+      
+      El signo menor que, el signo admiración hacia abajo y dos guiones, debajo el comentario y debajo dos guiones con el signo mayor que.
+      <!-- 
+   
+      el comentario      
+      -->    
+     </p>
+
+ </section>
+
+ <section>
+  <p>
+	 <B><h3>DISEÑO</h3></B> <br>
+  
+    Podemos crear círculos, cuadrados y poliedros. Utilizamos la siguiente nomenclatura:
+    
+   &lt;img usemap="#título" src="la fuente a donde creamos la imagen.gif"&gt; <br>
+   
+   Debajo ponemos  
+   
+   	 &lt;img usemap="#figuras" src="Trabajo LM Geometría.gif"&gt;
+
+				&lt;map name="nombre que le damos al map, que ha de ser el mismo que el de usemap."&gt; <br>
+					&lt;area shape="rect" coords="7,7,132,116" alt="Naranja" href="http://www.cuadricer.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/c/u/cuadros-2338-salones-abstractos-verdes-constelacion-planetaria.jpg"&gt; <br>
+					&lt;area shape="circle" coords="251,60,48" alt="Azul" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/CropCircleW.jpg"&gt; <br>
+				 	&lt;area shape="poly" coords="413,122,560,117,409,12" alt="Amarillo" href="https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_las_Bermudas#/media/File:Bermuda_Triangle.svg"&gt; <br>
+				&lt;/map&gt; <br>                                                                                                                                                             
+        &lt;alt&gt; se utilizaba para poner encima de cada figura un nombre. Pero html ya no lo utiliza.
+
+      <img usemap="#figuras" src="Trabajo LM Geometría.gif">
+  				
+        <map name="figuras">
+					<area shape="rect" coords="7,7,132,116" alt="Naranja" href="http://www.cuadricer.com/cuadros-explosion-naranjas-tripticos-varias-piezas-1837n.html" target="_blank">
+					<area shape="circle" coords="251,60,48" alt="Azul" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/CropCircleW.jpg" target="_blank">
+					<area shape="poly" coords="413,122,560,117,409,12" alt="Amarillo" href="https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_las_Bermudas#/media/File:Bermuda_Triangle.svg" target="_blank">
+				</map>
+  </section>
+  
+  <section>
+  <B><h3>CREAR UNA TABLA</h3></B>                                     
+	 <p> Para crear una tabla tenemos los siguientes elmentos &lt;table border=número&gt;, &lt;captiongt&gt;, &lt;thead&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;tbody&gt;.
+     &lt;thead&gt; es como el head pero para una tabla. 
+    
+    &lt;caption&gt; es como un tituar encima de una tabla o de una imagen. Ha de estar dentro del thead.<br>
+    
+    Definimos los estilos de la tabla en el &lt;style&gt; dentro del &lthead&gt del documento.  
+    Para crear el marco de la tabla hemos de escribir en el &lt;head&gt; dentro de &lt;style&gt; table border: número de pixeles del marco y su color, y para las líneas interiores: td {border: número de pixeles y color del marco}.<br>
+    A la tabla que hemos puesto como ejmplo le hemos aplicado: un borde de un pixel  &lt;table border= 1px&gt; y para las líneas de dentro td {border: 2px solid black;}. 
+   <br>                                                       
+        
+    &lt;thead&gt; es como el head pero para una tabla.  
+	
+	 &lt;tr&gt;(del inglés table row) son las filas de la tabla y con td (del ingles table data cell) añadimos los datos de las columnas.
+  </p>
+  
+  <table>
+  
+  <table border=1>
+
+  <thead>
+
+		<tr>
+    	<th >Columna1</th>
+			<th>Columna2</th>
+			<th>Columna3</th>
+			<th>Columna4</th>
+		</tr>
+	</thead>
+	
+  <tbody>
+		<tr>
+			<td>Elemento 1</td>
+			<td>Elemento 2</td>
+			<td>Elemento 3</td>
+			<td>Elemento 4</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.goodreads.com/book/show/21032488-doors-of-stone" target="_blank">doors-of-stone</a></td>
+					<td>Elemento 6</td>
+					<td>
+						<ol>
+							<li>Elemento 1</li>
+							<li>Elemento 2</li>
+							<li>Elemento 3</li>
+						</ol>
+					</td>
+					<td>Elemento 8</td>
+				</tr>
+				<tr>
+					<td>Elemento 9</td>
+					<td>Elemento 10</td>
+					<td>Elemento 11</td>
+					<td>Elemento 12</td>
+				</tr>
+	  			<tr>
+					<td>Elemento 13</td>
+					<td>Elemento 14</td>
+					<td colspan="2" rowspan="2"><img src="Trabajo LM homer.gif" width="100px"></td>
+				</tr>
+				<tr>
+					<td>Elemento 17</td>
+					<td>Elemento 18</td>
+				</tr>
+			</tbody>
+		</table>
+</section>
+  <p>
+   <a id=end_doc>Estás en el final del documento.</a> <br>
+  A ésta línea se llega con el link: "Ir al final del documento" que está dentro de la explicación de LINKS. </p>
+   <p>
+   <small> &lt;small&gt; Sirve como para incluir la letra pequeña, como si fuera la de un contrato &lt;/small&gt; </small> 
+    </p>
+  <section>
+	<p> 
+	Ejemplo de <b> footer:</b>
+  </p>
+  
+  <p>  
+  &lt;footer&gt; <br>
+		&lt;p&gt; Aviso legal y política de privacidad. &lt;a href="https://www.raspberryshop.es/aviso-legal.php"&gt; Marca registrada de la Raspberry Pi Foundation &lt;/a&gt; 
+    &lt;/p&gt; <br> 
+                                                                                                     
+		&lt;p&gt; © 2016 Raspberry Shop. Raspberry Pi y su logo son una marca registrada de la Raspberry Pi Foundation. &lt;/p&gt; <br> 
+    &lt;address&gt; 
+		&lt;p&gt; Escrito por &lt;a href="http://www.iessantiagohernandez.com"target="_blank"&gt;Instituto Santiago Hernández&gt;&lt;/a&gt; &lt;/p&gt; <br>
+    &lt;p&gt; Visitanos en: http://www.iessantiagohernandez.com/> &lt;/p&gt; <br>
+    &lt;/address&gt; <br>
+  &lt;/footer&gt; <br>
+  </p>
+  
+  <p>
+    <p> Este es el resultado de lo que hemos escrito arriba:
+    </p>
+    <footer>
+			<p> Aviso legal y política de privacidad. </p>  
+                                  
+		  <p> © 2016 Raspberry Shop. Raspberry Pi y su logo son una marca registrada de la Raspberry Pi Foundation. </p>
+      
+      <address> 
+		     <p>Escrito por <a href="http://www.iessantiagohernandez.com"target="_blank">Instituto Santiago Hernández</a> 
+         </p>
+         <p>Visitanos en: http://www.iessantiagohernandez.com
+         </p> 
+      </address>
+   </p>
+    </footer>
+  </section>
+ 
+</article>
+</body>
+</html>
